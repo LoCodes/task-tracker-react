@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className='container'>
-     <h1>Hello From {name}</h1>
-     <h2> ternary {x ? 'yes' : 'no' } </h2>
+     {/* <h1>Hello From {name}</h1>
+     <h2> ternary {x ? 'yes' : 'no' } </h2> */}
 
      <Header /> 
 

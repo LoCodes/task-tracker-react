@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 
 const Header = ({ title }) => {
   return (
-    <header> 
+    <header className='header'> 
        <h1>{title}</h1>
+       <button className='btn'> Add </button>
     </header>
-  )
+  ) 
 }
 
 // default props if there is no prop passed in the Header component in app.js 
