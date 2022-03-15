@@ -1,5 +1,7 @@
 // import React from "react";
 import Header from "./components/Header";
+import Tasks from "./components/Tasks";
+
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
      <h2> ternary {x ? 'yes' : 'no' } </h2> */}
 
      <Header /> 
+     <Tasks />
+
 
     </div>
   );
