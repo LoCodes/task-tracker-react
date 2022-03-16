@@ -8,10 +8,7 @@ import Tasks from "./components/Tasks";
 function App() {
   // const name = 'Loren'
   // const x = false
-
-
   
-
   const [tasks, setTasks] = useState([
 
     // usually want data in redux or context api 
@@ -42,6 +39,13 @@ function App() {
      setTasks(tasks.filter((task) => task.id !== id)) // setSomething how to deal with mutable state
   }
 
+  // Toggle Reminder  
+  const toggleReminder = (id) => {
+    setTasks(tasks.map((task) => 
+    task.id === id ? {...task, reminder: !task.reminder } : task))
+
+  }
+
   return (
      // to edit tasks like this because state is immutable 
 
@@ -51,7 +55,8 @@ function App() {
     <div className='container'>
      <Header /> 
      
-     {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : 'No Tasks'}
+     {tasks.length > 0 ? 
+     <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No Tasks'}
 
 
 
