@@ -38,6 +38,10 @@ function App() {
     }
   ])  
 
+  const deleteTask = (id) => {
+     setTasks(tasks.filter((task) => task.id !== id)) // setSomething how to deal with mutable state
+  }
+
   return (
      // to edit tasks like this because state is immutable 
 
@@ -49,7 +53,7 @@ function App() {
      <h2> ternary {x ? 'yes' : 'no' } </h2> */}
 
      <Header /> 
-     <Tasks tasks={tasks}/>
+     <Tasks tasks={tasks} onDelete={deleteTask}/>
 
 
     </div>
