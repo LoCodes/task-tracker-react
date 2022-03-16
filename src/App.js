@@ -1,20 +1,55 @@
 // import React from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 
 
 
 function App() {
-  const name = 'Loren'
-  const x = false
+  // const name = 'Loren'
+  // const x = false
+
+
+  
+
+  const [tasks, setTasks] = useState([
+
+    // usually want data in redux or context api 
+    {
+        id: 1, 
+        text: 'Interview with Tomorrow Health',
+        dateTime: 'March 15th, 2022 at 1:40pm',
+        reminder: true
+
+    },
+    {
+        id: 2, 
+        text: 'Get off at 6pm or later',
+        dateTime: 'March 15th, 2022',
+        reminder: false
+
+    },
+    {
+        id: 3, 
+        text: 'This is dummy data',
+        dateTime: 'March 15th, 2022 at 3:21pm',
+        reminder: true
+
+    }
+  ])  
 
   return (
+     // to edit tasks like this because state is immutable 
+
+    // setTasks([...tasks], {})
+            // spread then add 
+
     <div className='container'>
      {/* <h1>Hello From {name}</h1>
      <h2> ternary {x ? 'yes' : 'no' } </h2> */}
 
      <Header /> 
-     <Tasks />
+     <Tasks tasks={tasks}/>
 
 
     </div>
