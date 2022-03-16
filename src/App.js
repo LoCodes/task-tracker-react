@@ -49,11 +49,10 @@ function App() {
             // spread then add 
 
     <div className='container'>
-     {/* <h1>Hello From {name}</h1>
-     <h2> ternary {x ? 'yes' : 'no' } </h2> */}
-
      <Header /> 
-     <Tasks tasks={tasks} onDelete={deleteTask}/>
+     
+     {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : 'No Tasks'}
+
 
 
     </div>
