@@ -5,18 +5,12 @@ import Task from "./Task"
 
 const Tasks = ({tasks}) => {
   return (
-   
-
     <>Tasks
         {tasks.map((task) => ( 
-            <Task key={task.id} task={task} >
-        
+            <Task key={task.id} task={task} >       
             </Task>  
         ))}
-
-
     </>
-
   )
 }
 
