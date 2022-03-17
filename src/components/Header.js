@@ -7,7 +7,11 @@ const Header = ({ title, onAdd, showAdd }) => {
     <header className='header'> 
        <h1>{title}</h1>
        {/* reusable component */}
-       <Button color='green' text={showAdd ? 'Close' : 'Add'} onClick={onAdd}/> 
+       <Button 
+       color={showAdd ? 'red' : 'green'}
+       text={showAdd ? 'Close' : 'Add'} 
+       onClick={onAdd}
+       /> 
        
     </header> 
   ) 
