@@ -33,9 +33,18 @@ function App() {
         reminder: true
 
     }
-  ])  
+  ])
+  
+  // Add Task 
 
-  const deleteTask = (id) => {
+  const addTask = (task) => {
+    // using random number since there's no backend 
+    const id = Math.floor(Math.random() * 10000) + 1 
+    const newTask = {id, ...task} // add task with the id
+    setTasks([...tasks, newTask]) // add new task to existing tasks 
+  }
+
+  const deleteTask = (id) => { 
      setTasks(tasks.filter((task) => task.id !== id)) // setSomething how to deal with mutable state
   }
 
@@ -43,7 +52,6 @@ function App() {
   const toggleReminder = (id) => {
     setTasks(tasks.map((task) => 
     task.id === id ? {...task, reminder: !task.reminder } : task))
-
   }
 
   return (
@@ -54,7 +62,7 @@ function App() {
 
     <div className='container'>
      <Header />
-     <AddTask /> 
+     <AddTask onAdd={addTask}/> 
      
      {tasks.length > 0 ? 
      <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No Tasks'}
