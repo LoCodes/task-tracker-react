@@ -59,7 +59,10 @@ function App() {
             // spread then add 
 
     <div className='container'>
-     <Header onAdd={()=> setShowAddTask(!showAddTask)}/>
+     <Header 
+     onAdd={()=> setShowAddTask(!showAddTask)} 
+     showAdd={showAddTask}
+     />
     { showAddTask && <AddTask onAdd={addTask}/> }
      
      {tasks.length > 0 ? 
