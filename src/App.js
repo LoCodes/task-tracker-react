@@ -6,9 +6,7 @@ import AddTask from "./components/AddTask";
 
 
 function App() {
-  // const name = 'Loren'
-  // const x = false
-  
+  const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([
 
     // usually want data in redux or context api 
@@ -61,8 +59,8 @@ function App() {
             // spread then add 
 
     <div className='container'>
-     <Header />
-     <AddTask onAdd={addTask}/> 
+     <Header onAdd={()=> setShowAddTask(!showAddTask)}/>
+    { showAddTask && <AddTask onAdd={addTask}/> }
      
      {tasks.length > 0 ? 
      <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No Tasks'}
