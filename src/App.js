@@ -7,31 +7,7 @@ import AddTask from "./components/AddTask";
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
-  const [tasks, setTasks] = useState([
-
-    // usually want data in redux or context api 
-    {
-        id: 1, 
-        text: 'Interview with Tomorrow Health',
-        dateTime: 'March 15th, 2022 at 1:40pm',
-        reminder: true
-
-    },
-    {
-        id: 2, 
-        text: 'Get off at 6pm or later',
-        dateTime: 'March 15th, 2022',
-        reminder: false
-
-    },
-    {
-        id: 3, 
-        text: 'This is dummy data',
-        dateTime: 'March 15th, 2022 at 3:21pm',
-        reminder: true
-
-    }
-  ])
+  const [tasks, setTasks] = useState([])
   
   // Add Task 
 

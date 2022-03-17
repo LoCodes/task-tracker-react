@@ -1,19 +1,24 @@
 {
-  "posts": [
+  "tasks": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+      "id": 1, 
+      "text": "Interview with Tomorrow Health",
+      "dateTime": "March 15th, 2022 at 1:40pm",
+      "reminder": true
+
+  },
+  {
+      "id": 2, 
+      "text": "Get off at 6pm or later",
+      "dateTime": "March 15th, 2022",
+      "reminder": false
+
+  },
+  {
+      "id": 3, 
+      "text": "This is dummy data",
+      "dateTime": "March 15th, 2022 at 3:21pm",
+      "reminder": true
+
   }
-}
+]}
