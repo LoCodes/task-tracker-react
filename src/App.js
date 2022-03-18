@@ -29,15 +29,32 @@ function App() {
   }
   
   // Add Task 
-  const addTask = (task) => {
-    // using random number since there's no backend 
-    const id = Math.floor(Math.random() * 10000) + 1 
-    const newTask = {id, ...task} // add task with the id
-    setTasks([...tasks, newTask]) // add new task to existing tasks 
+  const addTask = async (task) => {
+    const res = await fetch('http://localhost:5000/tasks', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json', 
+      }, 
+      body: JSON.stringify(task),
+    })
+
+    const data = await res.json() 
+
+    setTasks([...tasks, data])
+
+    // // using random number if there's no backend 
+    // const id = Math.floor(Math.random() * 10000) + 1 
+    // const newTask = {id, ...task} // add task with the id
+    // setTasks([...tasks, newTask]) // add new task to existing tasks 
   }
 
-  const deleteTask = (id) => { 
-     setTasks(tasks.filter((task) => task.id !== id)) // setSomething how to deal with mutable state
+  // Delete Task
+  const deleteTask = async (id) => { 
+    await fetch(`http://localhost:5000/tasks/${id}`, {
+      method: 'DELETE',
+    })
+
+    setTasks(tasks.filter((task) => task.id !== id)) // setSomething how to deal with mutable state
   }
 
   // Toggle Reminder  
