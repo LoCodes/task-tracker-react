@@ -1,34 +1,16 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Interview with Tomorrow Health",
-      "dateTime": "March 15th, 2022 at 1:40pm",
-      "reminder": true
-    },
-    {
-      "id": 2,
-      "text": "Get off at 6pm or later",
-      "dateTime": "March 15th, 2022",
-      "reminder": false
-    },
-    {
-      "id": 3,
-      "text": "This is dummy data",
-      "dateTime": "March 15th, 2022 at 3:21pm",
-      "reminder": true
-    },
-    {
-      "text": "walk ember ",
-      "dateTime": "",
+      "text": "Divide tips ",
+      "dateTime": "right meow ",
       "reminder": false,
-      "id": 4
+      "id": 2
     },
     {
-      "text": "Finish React Crash Course",
-      "dateTime": "3/18 ",
+      "text": "Finish React Assessment ",
+      "dateTime": "March 21, 2022 morning!",
       "reminder": true,
-      "id": 5
+      "id": 3
     }
   ]
 }
