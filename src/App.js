@@ -1,6 +1,7 @@
 // import React from "react";
 import { useState, useEffect   } from "react";
 import Header from "./components/Header";
+import { Footer } from "./components/Footer";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 
@@ -73,7 +74,7 @@ function App() {
       headers: {
         'Content-type': 'application/json', 
       }, 
-      body: JSON.stringify(updateTask),
+      body: JSON.stringify(updateTask)
     })
  
     const data = await res.json() // a promise so make sure to await res.json()
@@ -101,9 +102,7 @@ function App() {
      
      {tasks.length > 0 ? 
      <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : 'No Tasks'}
-
-
-
+     <Footer />
     </div>
   );
 }

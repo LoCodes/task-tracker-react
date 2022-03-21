@@ -1,15 +1,9 @@
 {
   "tasks": [
     {
-      "text": "Divide tips ",
-      "dateTime": "right meow ",
-      "reminder": false,
-      "id": 2
-    },
-    {
       "text": "Finish React Assessment ",
       "dateTime": "March 21, 2022 morning!",
-      "reminder": true,
+      "reminder": false,
       "id": 3
     }
   ]
