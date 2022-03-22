@@ -3,8 +3,14 @@
     {
       "text": "Finish React Assessment ",
       "dateTime": "March 21, 2022 morning!",
-      "reminder": false,
+      "reminder": true,
       "id": 3
+    },
+    {
+      "text": "Appointment for uniform",
+      "dateTime": "March 22 1115",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
