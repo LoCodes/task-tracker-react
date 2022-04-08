@@ -34,6 +34,7 @@ import { useParams, Navigate } from 'react-router-dom'
             <div>
                 <h3> {task.text}</h3>
                 <p>{task.dateTime} </p>
+                <p>{task.details}</p>
             </div>
         )
    }
