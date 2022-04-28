@@ -1,4 +1,5 @@
 
+### `npm run server` to run server
 
 # Getting Started with Create React App
 

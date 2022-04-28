@@ -1,25 +1,6 @@
 {
   "tasks": [
     {
-      "text": "Finish React Assessment ",
-      "dateTime": "March 21, 2022 morning!",
-      "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "Appointment for uniform",
-      "dateTime": "March 22 1115",
-      "reminder": true,
-      "id": 4
-    },
-    {
-      "text": "Kroger Interview",
-      "dateTime": "April 7, 2022 at 10:25am - 11:05am",
-      "reminder": false,
-      "details": "Asked:",
-      "id": 5
-    },
-    {
       "text": "Add EDIT BUTTON in Details",
       "dateTime": "",
       "reminder": true,
@@ -32,6 +13,20 @@
       "reminder": true,
       "details": "",
       "id": 7
+    },
+    {
+      "text": "Finish Portfolio",
+      "dateTime": "Thursday, April 28, 2022 ",
+      "reminder": true,
+      "details": "Finish Base of portfolio, and make changes later on",
+      "id": 8
+    },
+    {
+      "text": "Host Task Tracker Live ",
+      "dateTime": "Thursday, April 28, 2022 ",
+      "reminder": false,
+      "details": "Doesn't have to be today, maybe tomorrow? ",
+      "id": 9
     }
   ]
 }
